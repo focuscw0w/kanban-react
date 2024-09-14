@@ -48,12 +48,8 @@ const boardsSlice = createSlice({
     updateTask: updateTaskReducer,
     removeTask: removeTaskReducer,
     updateSubtaskStatus: updateSubtaskStatusReducer,
-  },
+  }, 
 });
-
-// replace
-const selectBoard = (state) =>
-  state.boards.find((board) => board.name === state.boardName);
 
 export const {
   setBoardName,
@@ -65,7 +61,5 @@ export const {
   removeTask,
   updateSubtaskStatus,
 } = boardsSlice.actions;
-
-export { selectBoard };
 
 export default boardsSlice;

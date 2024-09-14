@@ -1,6 +1,5 @@
 import { useContext, useMemo } from "react";
 import { useSelector } from "react-redux";
-import { selectBoard } from "../../store/boards-slice";
 
 import Column from "./Column";
 import ThemeContext from "../../context/ThemeContext";
@@ -9,6 +8,11 @@ import useModalHandler from "../../hooks/useModalHandler";
 const Boards = () => {
   const { theme } = useContext(ThemeContext);
   const boardName = useSelector((state) => state.boardsState.boardName);
+  
+  const selectBoard = (state, boardName) => {
+    return state.boards.find((board) => board.name === boardName);
+  };
+
   const board = useSelector((state) =>
     selectBoard(state.boardsState, boardName)
   );
@@ -35,7 +39,7 @@ const Boards = () => {
     <div
       className={`${
         theme === "dark" ? "bg-darkGray" : "bg-lightestBlue"
-      } w-full h-screen overflow-y-hidden p-6`}
+      } w-screen h-screen overflow-y-hidden p-6 ove`}
     >
       {columns.length > 0 ? (
         <div className="flex">
