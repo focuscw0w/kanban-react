@@ -5,6 +5,8 @@ const addTaskReducer = (state, action) => {
   if (board) {
     const column = board.columns[columnName.toLowerCase()];
 
+    if (column === undefined) return;
+
     if (!column.tasks) {
       column.tasks = [];
     }
