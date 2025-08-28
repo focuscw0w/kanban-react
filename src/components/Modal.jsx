@@ -8,7 +8,6 @@ import TaskModal from "./modal-content/task-modal/TaskModal";
 import BoardModal from "./modal-content/BoardModal";
 import ThemeContext from "../context/ThemeContext";
 
-// to css file
 const modalOverlayStyle = {
   position: "fixed",
   top: 0,
