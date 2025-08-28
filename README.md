@@ -3,7 +3,7 @@
 A simple **Kanban Board** web application built with **React**, **Vite**, and **TailwindCSS**.  
 It provides an interactive board for managing tasks across multiple columns and subtasks.
 
-## 📖 Overview
+## Overview
 This project was built as a practice assignment inspired by  
 [Frontend Mentor – Kanban Task Management Web App](https://www.frontendmentor.io/challenges/kanban-task-management-web-app-wgQLt-HlbB).  
 
