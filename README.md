@@ -1,4 +1,4 @@
-# Kanban Board (React + Vite + Tailwind)
+# Kanban Board 
 
 A simple **Kanban Board** web application built with **React**, **Vite**, and **TailwindCSS**.  
 It provides an interactive board for managing tasks across multiple columns and subtasks.
