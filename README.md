@@ -31,8 +31,8 @@ This project was built as a practice assignment inspired by
 ## Installation & Setup
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/kanban-react-main.git
-   cd kanban-react-main
+   git clone https://github.com/focuscw0w/kanban-react.git
+   cd kanban-react
 2. npm install
 3. npm run dev
 4. http://localhost:5173
